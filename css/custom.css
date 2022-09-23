@@ -71,7 +71,7 @@
         .cont3 .center .top_text {text-align:center;}
         .cont3 .center .top_text h2 {font-size:35px; line-height:50px; margin-bottom:10px;}
         .cont3 .center .top_text p {font-size:13px; color:#797979;}
-        .cont3 .center .top_text p::after {content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:30px auto;}
+        .cont3 .center .top_text span {display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
 
         .cont3 .center .boxs {display:flex; flex-wrap:wrap;}
         .cont3 .center .boxs .box {width:350px; height:321px; margin:15px; text-align:center; position:relative;
