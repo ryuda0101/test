@@ -1,8 +1,8 @@
         /* 리셋작업 */
         * {margin:0; padding:0;}
         ul,ol,li {list-style:none;}
-        a {text-decoration:none; color:#fff;}
-        body {line-height:1; color:#fff; text-align:center; font-family: 'Montserrat', sans-serif;}
+        a {text-decoration:none;}
+        body {line-height:1; font-family: 'Montserrat', sans-serif;}
         img {vertical-align:middle;}
 
         /* 헤더영역 작업 시작 */
@@ -10,7 +10,7 @@
         #header .center {width:1200px; display:flex; justify-content:space-between;}
         #header .center ul, #header .center{display:flex; align-items:center;}
         #header .center ul li {margin-right:35px; line-height:100px;}
-        #header .center ul li a {position:relative; font-weight:bold;}
+        #header .center ul li a {position:relative; font-weight:bold; color:#fff;}
         #header .center ul li a::after {content:""; width:0; height:2px; background-color:#fff;
                                         position:absolute; left:0; bottom:-10px; transition:all 0.3s; }
         #header .center ul li a:hover::after {width:100%}
@@ -21,21 +21,42 @@
         /* 헤더영역 작업 끝 */
         
         /* 중간영역cont1 작업 시작 */
+        #container {overflow:hidden;}
         .cont1 {width:100vw; height:100vh; background-image:url(../img/profile.jpg); background-repeat:no-repeat;
-                     background-size:cover; /**background-position:center;**/}
+                     background-size:cover; color:#fff;}
         .cont1 .black_bg {height:100vh; background-color:rgba(0,0,0,0.5);
                                display:flex; justify-content:center; align-items:center;}
+        .cont1 .black_bg .title_text {text-align:center;}
         .cont1 .black_bg .title_text .hello {font-size:25px; margin-bottom:45px;}
         .cont1 .black_bg .title_text .name {font-size:60px; margin-bottom:35px;}
         .cont1 .black_bg .title_text .job {font-size:30px; margin-bottom:40px;}        
         .cont1 .black_bg .title_text .sns {display:flex; justify-content:center;}
         .cont1 .black_bg .title_text .sns li a {width:45px; height:45px; border-radius:50%; background-color:rgba(0,0,0,0.3);
                                                 display:flex; align-items:center; justify-content:center; margin: 0 5px;
-                                                font-size:20px;
+                                                font-size:20px; color:#fff;
                                                 }
         .cont1 .black_bg .title_text .sns li:hover a {background-color:rgba(0,0,0,0.7)}
         /* 중간영역cont1 작업 끝 */
 
         /* 중간영역cont2 작업 시작 */
+        .cont2 {width:100vw; height:850px; display:flex; justify-content:center;}
+        .cont2 .center {width:1140px; display:flex; align-items:center; justify-content:space-between;}
+
+        .cont2 .center .left_textBox {width:635px;}
+        .cont2 .center .left_textBox h2 {font-size:35px; line-height:45px; font-weight:700; margin-bottom:10px;}
+        .cont2 .center .left_textBox h3 {font-size:16px; color:#999; margin-bottom:30px; font-weight:normal;}
+        .cont2 .center .left_textBox p {color:#797979; padding-bottom:30px; line-height:30px;}
+        .cont2 .center .left_textBox .btns {display:flex;}
+
+        .cont2 .center .left_textBox .btns a {display:block; background-color:#393939; color:#fff; font-size:20px;
+                                              padding:15px 40px; border-radius:3px; margin-right:30px;
+                                              position:relative;}
+
+        .cont2 .center .left_textBox .btns a::before {content:""; display:block; position:absolute; top:0; left:50%; transform:translateX(-50%);
+                                                      width:0; height:100%; background-color:#040c2c; transition:all 0.5s;}                                      
+        .cont2 .center .left_textBox .btns a:hover::before {width:100%;}
+
+        .cont2 .center .right_imgBox {width:475px;}
+        .cont2 .center .right_imgBox img {width:100%;}
         /* 중간영역cont2 작업 끝 */
         
