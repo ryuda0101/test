@@ -1,0 +1,41 @@
+        /* 리셋작업 */
+        * {margin:0; padding:0;}
+        ul,ol,li {list-style:none;}
+        a {text-decoration:none; color:#fff;}
+        body {line-height:1; color:#fff; text-align:center; font-family: 'Montserrat', sans-serif;}
+        img {vertical-align:middle;}
+
+        /* 헤더영역 작업 시작 */
+        #header {position:absolute; display:flex; justify-content:center; width:100%;}
+        #header .center {width:1200px; display:flex; justify-content:space-between;}
+        #header .center ul, #header .center{display:flex; align-items:center;}
+        #header .center ul li {margin-right:35px; line-height:100px;}
+        #header .center ul li a {position:relative; font-weight:bold;}
+        #header .center ul li a::after {content:""; width:0; height:2px; background-color:#fff;
+                                        position:absolute; left:0; bottom:-10px; transition:all 0.3s; }
+        #header .center ul li a:hover::after {width:100%}
+
+        #header .center .login {background-color:#fff; color:#000; width:115px; height:40px; border-radius:5px; font-weight:500;
+                                display:flex; justify-content:center; align-items:center; transition:all 0.3s;}
+        #header .center .login:hover {background-color:#000; color:#fff;}
+        /* 헤더영역 작업 끝 */
+        
+        /* 중간영역cont1 작업 시작 */
+        .cont1 {width:100vw; height:100vh; background-image:url(../img/profile.jpg); background-repeat:no-repeat;
+                     background-size:cover; /**background-position:center;**/}
+        .cont1 .black_bg {height:100vh; background-color:rgba(0,0,0,0.5);
+                               display:flex; justify-content:center; align-items:center;}
+        .cont1 .black_bg .title_text .hello {font-size:25px; margin-bottom:45px;}
+        .cont1 .black_bg .title_text .name {font-size:60px; margin-bottom:35px;}
+        .cont1 .black_bg .title_text .job {font-size:30px; margin-bottom:40px;}        
+        .cont1 .black_bg .title_text .sns {display:flex; justify-content:center;}
+        .cont1 .black_bg .title_text .sns li a {width:45px; height:45px; border-radius:50%; background-color:rgba(0,0,0,0.3);
+                                                display:flex; align-items:center; justify-content:center; margin: 0 5px;
+                                                font-size:20px;
+                                                }
+        .cont1 .black_bg .title_text .sns li:hover a {background-color:rgba(0,0,0,0.7)}
+        /* 중간영역cont1 작업 끝 */
+
+        /* 중간영역cont2 작업 시작 */
+        /* 중간영역cont2 작업 끝 */
+        
