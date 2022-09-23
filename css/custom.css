@@ -59,4 +59,27 @@
         .cont2 .center .right_imgBox {width:475px;}
         .cont2 .center .right_imgBox img {width:100%;}
         /* 중간영역cont2 작업 끝 */
+
+        /* 중간영역cont3 작업 시작 */
+        .cont3 {display:flex; justify-content:center; background-color:#fafafa; padding:110px 0px 90px;}
+        .cont3 .center {width:1140px;}
+        .cont3 .center .top_text {text-align:center;}
+        .cont3 .center .top_text h2 {font-size:35px; line-height:50px; margin-bottom:10px;}
+        .cont3 .center .top_text p {font-size:13px; color:#797979;}
+        .cont3 .center .top_text p::after {content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:30px auto;}
+
+        .cont3 .center .boxs {display:flex; flex-wrap:wrap;}
+        .cont3 .center .boxs .box {width:350px; height:321px; margin:15px; text-align:center; position:relative;
+                                   transition:all 0.5s; box-shadow:0 0 10px rgba(100,100,100,0.2); cursor:pointer;}
+        .cont3 .center .boxs .box:hover {box-shadow:0 0 15px rgba(100,100,100,0.5);} 
+        .cont3 .center .boxs .box > div {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#797979;
+                                         width:85%;}
+        .cont3 .center .boxs .box i {font-size:40px;}
+        .cont3 .center .boxs .box h3 {color:#000; font-size:20px; margin:15px 0;}
+        .cont3 .center .boxs .box p {line-height:25px;}
+
+
+
+
+        /* 중간영역cont3 작업 끝 */
         
