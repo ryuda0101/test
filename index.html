@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- script 관련 link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- 슬라이드 관련 link, 스크립트 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 카카오 지도 관련 link, 스크립트 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b6e465b60d12a4d3eaf134ff827cd2ba"></script>
 </head>
 <body>
     <div id="wrap">
@@ -33,6 +38,7 @@
             </div>
         </div>
         <div id="container">
+
             <div class="cont1">
                 <div class="black_bg">
                     <div class="title_text">
@@ -48,6 +54,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="cont2">
                 <div class="center">
                     <div class="left_textBox">
@@ -64,6 +71,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="cont3">
                 <div class="center">
                     <div class="top_text">
@@ -129,6 +137,7 @@
                     </div>
                 </div>
             </div>
+
             <div class="cont4">
                 <div class="center">
                     <div class="cont4_top">
@@ -231,8 +240,176 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 슬라이드 작업 시작 -->
+            <div class="cont5">
+                <div class="top">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <img src="img/circleimg01.png">
+                                <h2>MICHAEL BEAN</h2>
+                                <span>Graphic Designer</span>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/circleimg02.jpg">
+                                <h2>Edward Evanse</h2>
+                                <span>Envato Customer</span>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/circleimg03.jpg">
+                                <h2>Alex Smith</h2>
+                                <span>Envato Customer</span>
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="bot">
+                    <div class="top_text">
+                        <h2>Trusted byGreat People</h2>
+                        <p>It is a long established fact that a reader will be distracted by the readable
+                            content of a page when looking at its layout.</p>
+                    </div>
+                    <div class="bot_img">
+                        <img src="img/1.png">
+                        <img src="img/2.png">
+                        <img src="img/3.png">
+                        <img src="img/4.png">
+                        <img src="img/5.png">
+                        <img src="img/6.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cont6">
+                <div class="top_box">
+                    <h2>Our Blog</h2>
+                    <p class="sub_text">It is a long established fact that a reader will be distracted by the readabke<br>
+                    contrnt of a page when looking as its layout.</p>
+                </div>
+                   <div class="bot_box">                
+                        <div class="box">
+                            <img class="img" src="img/post-img2.jpg">
+                            <div class="text_box">
+                                <p class="date">Jun<br>14</p>
+                                <h3><i class="fa-solid fa-tags"></i> BY : Tasnim</h3>
+                                <h4>Contrary to popular belief</h4>
+                                <p class="text">Suspendisse in mattis neque, sed accu-<br>
+                                msan erat. Maecenas eget metus dui.<br>
+                                Vestibulum accumsan massa quam</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>             
+                        <div class="box">
+                            <img class="img" src="img/post-img1.jpg">
+                            <div class="text_box">
+                                <p class="date">Jun<br>14</p>
+                                <h3><i class="fa-solid fa-tags"></i> BY : Tasnim</h3>
+                                <h4>Contrary to popular belief</h4>
+                                <p class="text">Suspendisse in mattis neque, sed accu-<br>
+                                msan erat. Maecenas eget metus dui.<br>
+                                Vestibulum accumsan massa quam</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div>             
+                        <div class="box">
+                            <img class="img" src="img/post-img3.jpg">
+                            <div class="text_box">
+                                <p class="date">Jun<br>14</p>
+                                <h3><i class="fa-solid fa-tags"></i> BY : Tasnim</h3>
+                                <h4>Contrary to popular belief</h4>
+                                <p class="text">Suspendisse in mattis neque, sed accu-<br>
+                                msan erat. Maecenas eget metus dui.<br>
+                                Vestibulum accumsan massa quam</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </div> 
+                   </div>
+            </div>
+            
+            <!-- 지도 작업 시작 -->
+            <div class="cont7">
+                <div class="center">
+                </div>
+            </div>
+
+            <!-- 폼태그 유효성 검사 부분 작업 시작 -->
+            <div class="cont8">
+                <div class="center">
+                    <div class="left_box">
+                        <h2>Contact Info</h2>
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-location-dot"></i>
+                                <p>Address: Z105 - Tan Thinh,<br>
+                                   Thai Nguyen - Viet Nam
+                                </p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                                <p>Phone: +1.900.3456.789</p>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>Email: yourname@somemail.com</p>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-globe-stand"></i>
+                                <p>Website: http://example.com</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right_box">
+                        <h2>Contact Form</h2>
+                        <form action="test.php" id="contact" name="contact" method="post">
+                            <div class="box">
+                                <input type="text" id="Name" name="Name" placeholder="Your Name*">
+                                <span class="name"></span>
+                            </div>
+                            <div class="box">
+                                <input type="text" id="Email" name="Email" placeholder="Your Email*">
+                                <span class="email"></span>
+                            </div>
+                            <div class="box">
+                                <input type="text" id="Subject" name="Subject" placeholder="Subject*">
+                                <span class="Subject"></span>
+                            </div>
+                            <div class="box">
+                                <input type="text" id="Phone" name="Phone" placeholder="Phone*">
+                                <span class="Phone"></span>
+                            </div>
+                            <textarea id="Message" name="Message" placeholder="Your Message ..."></textarea>
+                        </form>
+                        <a href="#">send Message</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="center">
+                <h1><a href="#"><img src="img/logo.png"></a></h1>
+                <ul class="sns">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+                <p class="top_text">Made with love by <span>Dreemsthemes</span></p>
+                <p class="bot_text">© 2018 DREEMSTHEMES - ALL RIGHTS RESERVED</p>
+            </div>
+        </div>
     </div>
     <script src="js/aos.js"></script>
     <script src="js/custom.js"></script>
