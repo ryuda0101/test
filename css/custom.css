@@ -166,6 +166,32 @@
         #cont7 {width:100%; height:500px;}
         /* 중간영역cont7 작업 끝 */
 
-
         /* 중간영역cont8 작업 시작 */
+        .cont8 {display:flex; justify-content:center; padding:125px 0;}
+        .cont8 .center {width:1090px; display:flex; justify-content:space-between;}
+        .cont8 .center .left_box li {display:flex; margin:15px 0;}
+        .cont8 .center .left_box li i {line-height:25px; margin-right:15px; color:#494949;}
+
+        .cont8 .center .right_box {width:670px;}
+        .cont8 .center .right_box form {display:flex; flex-wrap:wrap;}
+        .cont8 .center .right_box form input {margin:15px; width:300px; height:45px; border:1px solid #ededed; padding-left:10px; box-sizing:border-box;}
+        .cont8 .center .right_box form span {display:block; margin-left:15px;}
+        
+        .cont8 .center .right_box form textarea {width:635px; height:140px; margin:15px 0 30px 15px; border:1px solid #ededed; padding:10px 0 0 10px;}
+        .cont8 .center .right_box a {display:block; background-color:#393939; color:#fff; font-size:15px;
+                                     padding:15px 0; width:200px; border-radius:3px; text-align:center; margin-left:15px;}
         /* 중간영역cont8 작업 끝 */
+        
+        /* 풋터영역 작업 시작 */
+        #footer {display:flex; justify-content:center; text-align:center; background-color:#040c2c; padding:30px 0;}
+        #footer .center {width:374px;}
+        #footer .center h1 {margin:30px 0;}
+        #footer .center .sns {display:flex; justify-content:center;}
+        #footer .center .sns li a {margin:0 6px; width:10px; height:10px; display:flex; align-items:center; justify-content:center; border:1px solid #fff; border-radius:50%; padding:10px;
+                                   background-color:rgba(255, 255, 255, 0); transition:all 0.5s;}
+        #footer .center .sns li a:hover {background-color:rgba(255, 255, 255, 1);}
+        #footer .center .sns li a:hover i {color:#040c2c;}
+
+        #footer .center .sns li a i {color:#fff;}
+        #footer .center .top_text span, #footer .center .bot_text {color:#fff;}
+        /* 풋터영역 작업 끝 */
