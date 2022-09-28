@@ -8,10 +8,20 @@
         p {font-size:13px; color:#797979; line-height:25px;}
 
         /* 헤더영역 작업 시작 */
-        #header {position:absolute; display:flex; justify-content:center; width:100%;}
+        #header {position:absolute; display:flex; justify-content:center; width:100%; transition:all 0.5s;}
+        #header.fixed {position:fixed; background-color:#fff; box-shadow:0 0 15px rgba(0,0,0,0.3); z-index:99;}
+        #header.fixed h1 img {content:url(../img/logo.png);}
+        #header.fixed .center ul li a {color:#040c2c;}
+        #header.fixed .center ul li a::after {background-color:#040c2c;}
+        #header.fixed .center .login {background-color:#040c2c; color:#fff;}
+        #header.fixed .center .login::before {background-color:#393939;}
+
         #header .center {width:1200px; display:flex; justify-content:space-between;}
         #header .center ul, #header .center{display:flex; align-items:center;}
         #header .center ul li {margin-right:35px; line-height:100px;}
+        
+        #header .center ul li.on a::after {width:100%;}
+        
         #header .center ul li a {position:relative; font-weight:bold; color:#fff;}
         #header .center ul li a::after {content:""; width:0; height:2px; background-color:#fff;
                                         position:absolute; left:0; bottom:-10px; transition:all 0.3s; }
@@ -91,41 +101,43 @@
         .cont4 .cont4_bot, .cont4 .cont4_top {display:flex; justify-content:center;}
         .cont4 .cont4_top .center {width:1140px; text-align:center;}
         .cont4 .cont4_top .center .top_text p::after {content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
-        .cont4 .cont4_top .center  .bot_isotope .box_menu {display:flex; justify-content:center;}
-        .cont4 .cont4_top .center  .bot_isotope .box_menu a {color:#000; display:block; padding:25px; border:1px solid #ededed; margin:12px;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs {display:flex; flex-wrap:wrap;}
+        .cont4 .cont4_top .center .bot_isotope .box_menu {display:flex; justify-content:center;}
+        .cont4 .cont4_top .center .bot_isotope .box_menu a {color:#000; display:block; padding:25px; border:1px solid #ededed; margin:12px;}
+        .cont4 .cont4_top .center .bot_isotope .boxs {display:flex; flex-wrap:wrap; position:relative;}
 
-        .cont4 .cont4_top .center  .bot_isotope .boxs .box {position:relative;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .box:hover .information {opacity:1;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .box .information {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
+        .cont4 .cont4_top .center .bot_isotope .boxs .box {position:absolute; top:0; left:0;}
+
+        .cont4 .cont4_top .center .bot_isotope .boxs .box:hover .information {opacity:1;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .box .information {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);
                                                                         background-color:rgba(255, 255, 255, 0.8); opacity:0; transition:all 0.5s;
                                                                         display:flex; flex-direction:column; justify-content:center;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .small .information {width:95%; height:95%;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .big .information {width:98%; height:98%; font-size:15px;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .box .information a {display:inline-block; width:45px; height:45px; line-height:43px;
+        .cont4 .cont4_top .center .bot_isotope .boxs .small .information {width:95%; height:95%;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .big .information {width:98%; height:98%; font-size:15px;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .box .information a {display:inline-block; width:45px; height:45px; line-height:43px;
                                                                           border-radius:50%; border:1px solid #111; background-color:#111; color:#eee;
                                                                           transition:all 0.5s;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .box .information a:hover {background-color:#eee; color:#111;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .box .information p {line-height:50px;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .box .information a:hover {background-color:#eee; color:#111;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .box .information p {line-height:50px;}
         
-        .cont4 .cont4_top .center  .bot_isotope .boxs .box {margin:15px;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .small {width:255px; height:300px;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs .big {width:540px; height:640px;}
-        .cont4 .cont4_top .center  .bot_isotope .boxs img {width:100%; height:100%;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .box {margin:15px;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .small {width:255px; height:300px;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .big {width:540px; height:640px;}
+        .cont4 .cont4_top .center .bot_isotope .boxs img {width:100%; height:100%;}
 
 
-        .cont4 .cont4_bot {display:flex; justify-content:center; background-color:#fafafa;}
-        .cont4 .cont4_bot .center {width:1120px; display:flex; justify-content:space-between; align-items:center;}
+        .cont4 .cont4_bot {display:flex; justify-content:center; background-color:#fafafa; padding:120px 0;}
+        .cont4 .cont4_bot .center {width:1120px; display:flex; justify-content:space-between; text-align:center;}
         .cont4 .cont4_bot .center .box {text-align:center; padding:120px 0;}
         .cont4 .cont4_bot .center .box i {font-size:35px;}
         .cont4 .cont4_bot .center .box h2 {font-size:40px;}
         /* 중간영역cont4 작업 끝 */
         
         /* 중간영역cont5 작업 시작 */
-        .cont5 .top {background-image:url(../img/bg.jpg);}
+        .cont5 .top {background-image:url(../img/bg.jpg); background-repeat:no-repeat;}
         .cont5 .top .swiper {width:1140px; overflow:hidden;}
-        .cont5 .top .swiper .swiper-slide {text-align:center; padding:85px 0;}
-        .cont5 .top .swiper .swiper-slide .img {width:80px; height:80px; margin:0 auto;
+        .cont5 .top .swiper .swiper-wrapper {position:relative; display:flex;}
+        .cont5 .top .swiper .swiper-wrapper .swiper-slide {text-align:center; padding:85px 0;}
+        /* .cont5 .top .swiper .swiper-slide .img {width:80px; height:80px; margin:0 auto;
                                                 border:1px solid #ededed; border-radius:50%; background-color:#fff; overflow:hidden;}
         .cont5 .top .swiper .swiper-slide .img img {width:100%;}
         .cont5 .top .swiper .swiper-slide h2, .cont5 .top .swiper .swiper-slide p {color:#fff;}
@@ -133,9 +145,7 @@
         .cont5 .top .swiper .swiper-slide span {display:block; color:#ccc; margin-bottom:25px;}
 
         .cont5 .bot {text-align:center; padding:130px 0;}
-        .cont5 .bot .top_text::after {content:""; display:block; content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
-
-
+        .cont5 .bot .top_text::after {content:""; display:block; content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;} */
         /* 중간영역cont5 작업 끝 */
 
 

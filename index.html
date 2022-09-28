@@ -14,13 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- script 관련 link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- isotope 관련 스크립트 -->
-    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- 슬라이드 관련 link, 스크립트 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- 카카오 지도 관련 link, 스크립트 -->
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b51f43f1b910999c76c4f91f07d522a3"></script>
 </head>
 <body>
     <div id="wrap">
@@ -28,7 +23,7 @@
             <div class="center">
                 <h1 class="logo"><a href="#"><img src="img/logo2.png"></a></h1>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li class="on"><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">SERVICE</a></li>
                     <li><a href="#">PORTFOLIO</a></li>
@@ -39,8 +34,8 @@
                 <a class="login" href="#">LOGIN</a>
             </div>
         </div>
-        <div id="container">
 
+        <div id="container">
             <div class="cont1">
                 <div class="black_bg">
                     <div class="title_text">
@@ -149,13 +144,13 @@
                         </div>
                         <div class="bot_isotope">
                             <ul class="box_menu">
-                                <li><a href="#">ALL</a></li>
-                                <li><a href="#">Web Design</a></li>
-                                <li><a href="#">Development</a></li>
-                                <li><a href="#">Marketing</a></li>
+                                <li data-list="*"><a href="#">ALL</a></li>
+                                <li data-list=".Web_Design"><a href="#">Web Design</a></li>
+                                <li data-list=".Development"><a href="#">Development</a></li>
+                                <li data-list=".Marketing"><a href="#">Marketing</a></li>
                             </ul>
                             <div class="boxs">
-                                <div class="box small">
+                                <div class="box small Web_Design">
                                     <img src="img/product1.jpg">
                                     <div class="information">
                                         <p>WEB DESIGN</p>
@@ -169,7 +164,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="box small">
+                                <div class="box small Web_Design">
                                     <img src="img/product2.jpg">
                                     <div class="information">
                                         <p>WEB DESIGN</p>
@@ -183,7 +178,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="box big">
+                                <div class="box big Development">
                                     <img src="img/product3.jpg">
                                     <div class="information">
                                         <p>WEB DESIGN</p>
@@ -197,7 +192,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="box big">
+                                <div class="box top big Web_Design">
                                     <img src="img/product4.jpg">
                                     <div class="information">
                                         <p>WEB DESIGN</p>
@@ -211,7 +206,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="box small">
+                                <div class="box small Marketing">
                                     <img src="img/product5.jpg">
                                     <div class="information">
                                         <p>WEB DESIGN</p>
@@ -225,7 +220,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="box small">
+                                <div class="box small Development">
                                     <img src="img/product6.jpg">
                                     <div class="information">
                                         <p>WEB DESIGN</p>
@@ -277,7 +272,7 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide">
+                            <!-- <div class="swiper-slide">
                                 <div class="img">
                                     <img src="img/circleimg01.png">
                                 </div>
@@ -300,11 +295,12 @@
                                 <h2>Alex Smith</h2>
                                 <span>Envato Customer</span>
                                 <p>Lorem Ipsum has been the industry's standard dummy text ever since the<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                            </div>
+                            </div> -->
+                            <div class="swiper-slide">Slide 1</div>
+                            <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div>
                         </div>
                         <!-- If we need pagination -->
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-pagination"></div>
                         <div class="swiper-pagination"></div>
                     </div>
                 </div>
@@ -381,9 +377,8 @@
             
             <!-- 지도 작업 시작 -->
             <div id="cont7">
-                </div>
             </div>
-
+            
             <!-- 폼태그 유효성 검사 부분 작업 시작 -->
             <div class="cont8">
                 <div class="center">
@@ -435,8 +430,8 @@
                     </div>
                 </div>
             </div>
-
         </div>
+
         <div id="footer">
             <div class="center">
                 <h1><a href="#"><img src="img/logo2.png"></a></h1>
@@ -452,8 +447,23 @@
             </div>
         </div>
     </div>
+    <!-- isotope 관련 스크립트 -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="js/isotope.js"></script>
+    <!-- 슬라이드 관련 link, 스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+
+    <script src="js/header.js"></script>
+
     <script src="js/aos.js"></script>
-    <script src="js/custom.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- 카카오 지도 관련 link, 스크립트 -->
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b51f43f1b910999c76c4f91f07d522a3"></script>
     <script src="js/kakao_map.js"></script>
 </body>
 </html>
