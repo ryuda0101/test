@@ -82,14 +82,14 @@
         /* 중간영역cont2 작업 끝 */
 
         /* 중간영역cont3 작업 시작 */
-        .cont3 {display:flex; justify-content:center; background-color:#fafafa; padding:110px 0px 90px;}
+        .cont3 {height:900px; display:flex; justify-content:center; background-color:#fafafa; padding:110px 0px 90px;}
         .cont3 .center {width:60%;}
         .cont3 .center .top_text {text-align:center;}
         .cont3 .center .top_text h2 {margin-bottom:10px;}
         .cont3 .center .top_text span {display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
 
-        .cont3 .center .boxs {display:flex; flex-wrap:wrap; width:100%; height:100%;}
-        .cont3 .center .boxs .box {width:18%; height:100%;  margin:15px; text-align:center; position:relative; background-color:#fff;
+        .cont3 .center .boxs {display:flex; flex-wrap:wrap; width:100%; justify-content:center;}
+        .cont3 .center .boxs .box {width:18%; height:320px; margin:15px; text-align:center; position:relative; background-color:#fff;
                                    border:1px solid #f3f1f1; cursor:pointer; box-sizing:border-box;}
         .cont3 .center .boxs .box::before {content:""; display:block; position:absolute; width:100%; height:100%; transition:all 0.5s; }
         .cont3 .center .boxs .box:hover::before {box-shadow:0 0 15px rgba(100,100,100,0.5); }       
@@ -130,9 +130,9 @@
         .cont4 .cont4_top .center .bot_isotope .boxs .box .information a:hover {background-color:#eee; color:#111;}
         .cont4 .cont4_top .center .bot_isotope .boxs .box .information p {line-height:50px;}
         
-        .cont4 .cont4_top .center .bot_isotope .boxs .box {margin:15px;}
-        .cont4 .cont4_top .center .bot_isotope .boxs .small {width:22%; height:300px;}
-        .cont4 .cont4_top .center .bot_isotope .boxs .big {width:47%; height:640px;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .box {margin:1%;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .small {width:22%;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .big {width:47%;}
         .cont4 .cont4_top .center .bot_isotope .boxs img {width:100%; height:100%;}
 
 
@@ -239,9 +239,16 @@
                 .cont2 .center .right_imgBox {width:75%; position:relative; right:0;}
 
                 /* cont3 작업 시작 */
-                /* .cont3 .center {width:77.5%;}
-                .cont3 .center .box {width:24%;} */
+                .cont3 .center {width:77.5%;}
+                .cont3 .center .boxs .box {width:24%; height:350px;}
+                .cont4 .cont4_top .center {width:80%;}
+                .cont4 .cont4_top .center .bot_isotope .boxs .box {margin:1.25%;}
+                .cont4 .cont4_top .center .bot_isotope .boxs .small {width:17.5%;}
+                .cont4 .cont4_top .center .bot_isotope .boxs .big {width:37.5%;}
 
+                .cont4 .cont4_bot {padding:100px 0;}
+
+                .cont5 .top .swiper {width:57.5%;}
         }
 
 
