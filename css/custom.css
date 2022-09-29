@@ -99,10 +99,18 @@
 
         /* 중간영역cont4 작업 시작 */
         .cont4 .cont4_bot, .cont4 .cont4_top {display:flex; justify-content:center;}
+        .cont4 .cont4_top {padding:120px;}
         .cont4 .cont4_top .center {width:1140px; text-align:center;}
-        .cont4 .cont4_top .center .top_text p::after {content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
+        .cont4 .cont4_top .center .top_text span {display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
         .cont4 .cont4_top .center .bot_isotope .box_menu {display:flex; justify-content:center;}
-        .cont4 .cont4_top .center .bot_isotope .box_menu a {color:#000; display:block; padding:25px; border:1px solid #ededed; margin:12px;}
+        .cont4 .cont4_top .center .bot_isotope .box_menu li {margin:12px;}
+
+        .cont4 .cont4_top .center .bot_isotope .box_menu a {color:#000; display:block; padding:25px; border:1px solid #ededed;}
+        
+        .cont4 .cont4_top .center .bot_isotope .box_menu .on {background-color:#040c2c;}
+        .cont4 .cont4_top .center .bot_isotope .box_menu .on a { color:#fff;}
+
+        
         .cont4 .cont4_top .center .bot_isotope .boxs {display:flex; flex-wrap:wrap; position:relative;}
 
         .cont4 .cont4_top .center .bot_isotope .boxs .box {position:absolute; top:0; left:0;}
@@ -145,16 +153,21 @@
         .cont5 .top .swiper .swiper-slide span {display:block; color:#ccc; margin-bottom:25px;}
 
         .cont5 .bot {text-align:center; padding:130px 0;}
-        .cont5 .bot .top_text::after {content:""; display:block; content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;} */
+        .cont5 .bot .top_text span {display:block; content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;} */
+        .cont5 .bot .bot_img {display:flex;}
+        .cont5 .bot .bot_img img {width:160px;}
+        .cont5 .bot .swiper-slide img {opacity:0.6; transition:all 0.5s;}
+        .cont5 .bot .swiper-slide:hover img {opacity:1;}
+
+        
         /* 중간영역cont5 작업 끝
 
 
         /* 중간영역cont6 작업 시작 */
         .cont6 {padding:130px 0; text-align:center; background-color:#fafafa; display:flex; justify-content:center;}
         .cont6 .center {width:1140px;}
-        .cont6 .top_box .sub_text {color:gray; position:relative; margin-bottom:100px;}
-        .cont6 .top_box .sub_text::after {content:""; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); background-color:gray;
-                                            height:2px; width:80px; margin:50px 0 70px;}
+        .cont6 .top_box {margin-bottom:10px;}
+        .cont6 .top_box span {display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
         .cont6 .box {position:relative; background-color:#fff; width:350px; border:1px solid #ebebeb;
                      cursor:pointer; text-align:left; margin:0 15px; overflow:hidden; border-radius:5px;}
         .cont6 .box:hover .date {background-color:#040c2c; color:#fff;}
@@ -185,9 +198,9 @@
         .cont8 .center .right_box {width:670px;}
         .cont8 .center .right_box form {display:flex; flex-wrap:wrap;}
         .cont8 .center .right_box form input {margin:15px; width:300px; height:45px; border:1px solid #ededed; padding-left:10px; box-sizing:border-box;}
-        .cont8 .center .right_box form span {display:block; margin-left:15px;}
+        .cont8 .center .right_box form span {display:block; margin-left:15px; font-size:13px;}
         
-        .cont8 .center .right_box form textarea {width:635px; height:140px; margin:15px 0 30px 15px; border:1px solid #ededed; padding:10px 0 0 10px;}
+        .cont8 .center .right_box form textarea {width:620px; height:140px; resize:none; margin:15px 0 30px 15px; border:1px solid #ededed; padding:10px 0 0 10px;}
         .cont8 .center .right_box a {display:block; background-color:#393939; color:#fff; font-size:15px;
                                      padding:15px 0; width:200px; border-radius:3px; text-align:center; margin-left:15px;}
         /* 중간영역cont8 작업 끝 */
