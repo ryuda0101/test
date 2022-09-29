@@ -135,8 +135,7 @@
         /* 중간영역cont5 작업 시작 */
         .cont5 .top {background-image:url(../img/bg.jpg); background-repeat:no-repeat; background-size:cover;
                      display:flex; justify-content:center;}
-        .cont5 .top .swiper {width:623px; overflow:hidden;}
-        /* .cont5 .top .swiper .swiper-wrapper {position:relative; display:flex; justify-content:center; width:300%;}
+        .cont5 .top .swiper {width:623px; height:500px;}
         .cont5 .top .swiper .swiper-wrapper .swiper-slide {position:relative; left:0; text-align:center; padding:85px 0;}
         .cont5 .top .swiper .swiper-slide .img {width:80px; height:80px; margin:0 auto;
                                                 border:1px solid #ededed; border-radius:50%; background-color:#fff; overflow:hidden;}
@@ -146,7 +145,7 @@
         .cont5 .top .swiper .swiper-slide span {display:block; color:#ccc; margin-bottom:25px;}
 
         .cont5 .bot {text-align:center; padding:130px 0;}
-        .cont5 .bot .top_text::after {content:""; display:block; content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;} */ */
+        .cont5 .bot .top_text::after {content:""; display:block; content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;} */
         /* 중간영역cont5 작업 끝
 
 
