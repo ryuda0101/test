@@ -62,7 +62,7 @@
         /* .cont2 .center {width:59.375%; display:flex; align-items:center; justify-content:space-between;} */
         .cont2 .center {width:100%; display:flex; align-items:center; justify-content:space-between;}
 
-        .cont2 .center .left_textBox {width:33%; position:relative; left:400px;}
+        .cont2 .center .left_textBox {width:33%; position:relative; left:20.833333%;}
         .cont2 .center .left_textBox h2 {font-weight:700; margin-bottom:10px;}
         .cont2 .center .left_textBox h3 {font-size:16px; color:#999; margin-bottom:30px; font-weight:normal;}
         .cont2 .center .left_textBox p {padding-bottom:30px; line-height:30px;}
@@ -89,7 +89,7 @@
         .cont3 .center .top_text span {display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
 
         .cont3 .center .boxs {display:flex; flex-wrap:wrap; width:100%; justify-content:center;}
-        .cont3 .center .boxs .box {width:18%; height:320px; margin:15px; text-align:center; position:relative; background-color:#fff;
+        .cont3 .center .boxs .box {width:30%; height:320px; margin:1.25%; text-align:center; position:relative; background-color:#fff;
                                    border:1px solid #f3f1f1; cursor:pointer; box-sizing:border-box;}
         .cont3 .center .boxs .box::before {content:""; display:block; position:absolute; width:100%; height:100%; transition:all 0.5s; }
         .cont3 .center .boxs .box:hover::before {box-shadow:0 0 15px rgba(100,100,100,0.5); }       
@@ -102,13 +102,13 @@
 
         /* 중간영역cont4 작업 시작 */
         .cont4 .cont4_bot, .cont4 .cont4_top {display:flex; justify-content:center;}
-        .cont4 .cont4_top {padding:120px;}
+        .cont4 .cont4_top {padding:120px 0;}
         .cont4 .cont4_top .center {width:60%; text-align:center;}
         .cont4 .cont4_top .center .top_text span {display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
         .cont4 .cont4_top .center .bot_isotope .box_menu {display:flex; justify-content:center;}
         .cont4 .cont4_top .center .bot_isotope .box_menu li {margin:12px;}
 
-        .cont4 .cont4_top .center .bot_isotope .box_menu a {color:#000; display:block; padding:25px; border:1px solid #ededed;}
+        .cont4 .cont4_top .center .bot_isotope .box_menu a {color:#000; display:block; padding:25px; font-size:13px; border:1px solid #ededed;}
         
         .cont4 .cont4_top .center .bot_isotope .box_menu .on {background-color:#040c2c;}
         .cont4 .cont4_top .center .bot_isotope .box_menu .on a { color:#fff;}
@@ -132,13 +132,13 @@
         
         .cont4 .cont4_top .center .bot_isotope .boxs .box {margin:1%;}
         .cont4 .cont4_top .center .bot_isotope .boxs .small {width:22%;}
-        .cont4 .cont4_top .center .bot_isotope .boxs .big {width:47%;}
+        .cont4 .cont4_top .center .bot_isotope .boxs .big {width:46%;}
         .cont4 .cont4_top .center .bot_isotope .boxs img {width:100%; height:100%;}
 
 
         .cont4 .cont4_bot {display:flex; justify-content:center; background-color:#fafafa; padding:120px 0;}
         .cont4 .cont4_bot .center {width:58%; display:flex; justify-content:space-between; text-align:center;}
-        .cont4 .cont4_bot .center .box {text-align:center; padding:120px 0;}
+        .cont4 .cont4_bot .center .box {text-align:center; }
         .cont4 .cont4_bot .center .box i {font-size:35px;}
         .cont4 .cont4_bot .center .box h2 {font-size:40px;}
         /* 중간영역cont4 작업 끝 */
@@ -157,8 +157,8 @@
 
         .cont5 .bot {width:57.8%; margin:0 auto; text-align:center; padding:130px 0;}
         .cont5 .bot .top_text span {display:block; content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;} */
-        .cont5 .bot .bot_img {display:flex;}
-        .cont5 .bot .bot_img img {width:8.333333%;}
+        .cont5 .bot .bot_img {display:flex; width:11%;}
+        .cont5 .bot .bot_img img {width:100%;}
         .cont5 .bot .swiper-slide img {opacity:0.6; transition:all 0.5s;}
         .cont5 .bot .swiper-slide:hover img {opacity:1;}        
         /* 중간영역cont5 작업 끝
@@ -168,9 +168,9 @@
         .cont6 {padding:130px 0; text-align:center; background-color:#fafafa; display:flex; justify-content:center;}
         .cont6 .center {width:60%;}
         .cont6 .top_box {margin-bottom:10px;}
-        .cont6 .top_box span {display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;}
-        .cont6 .box {position:relative; background-color:#fff; width:18.2%; border:1px solid #ebebeb;
-                     cursor:pointer; text-align:left; margin:0 15px; overflow:hidden; border-radius:5px;}
+        .cont6 .top_box span {display:block; background-color:#bcbcbc; width:80px; height:2px; margin:0 auto;}
+        .cont6 .box {position:relative; background-color:#fff; width:30%; border:1px solid #ebebeb;
+                     cursor:pointer; text-align:left; overflow:hidden; border-radius:5px;}
         .cont6 .box:hover .date {background-color:#040c2c; color:#fff;}
         .cont6 .box .img {left:0; right:0; z-index:2; overflow:hidden;}
         .cont6 .box img {width:100%;}
@@ -180,6 +180,7 @@
         .cont6 .bot_box {display:flex; justify-content:space-between; color:#494949;}
         .cont6 .bot_box h3 {margin-bottom:20px; font-size:10px;}
         .cont6 .bot_box h4 {margin-bottom:25px; font-size:22px;}
+        .cont6 .bot_box p {font-size:11px;}
         .cont6 .bot_box .text {line-height:30px; margin-bottom:5px;}
         .cont6 .bot_box a {color:#494949; padding-bottom:35px; font-size:10px;}
         
@@ -196,19 +197,20 @@
         .cont8 .center .left_box li {display:flex; margin:15px 0;}
         .cont8 .center .left_box li i {line-height:25px; margin-right:15px; color:#494949;}
 
-        .cont8 .center .right_box {width:35%;}
-        .cont8 .center .right_box form {display:flex; flex-wrap:wrap;}
-        .cont8 .center .right_box form input {margin:15px; width:300px; height:45px; border:1px solid #ededed; padding-left:10px; box-sizing:border-box;}
+        .cont8 .center .right_box {width:61.5%;}
+        .cont8 .center .right_box form {width:100%; display:flex; flex-wrap:wrap; justify-content:space-between;}
+        .cont8 .center .right_box form .box {width:47.7%; margin-bottom:2.25%;}
+        .cont8 .center .right_box form input {width:100%; height:45px; border:1px solid #ededed; padding-left:10px; box-sizing:border-box;}
         .cont8 .center .right_box form span {display:block; margin-left:15px; font-size:13px;}
         
-        .cont8 .center .right_box form textarea {width:620px; height:140px; resize:none; margin:15px 0 30px 15px; border:1px solid #ededed; padding:10px 0 0 10px;}
+        .cont8 .center .right_box form textarea {width:100%; height:140px; margin-bottom:25px; resize:none; border:1px solid #ededed; padding:10px 0 0 10px;}
         .cont8 .center .right_box a {display:block; background-color:#393939; color:#fff; font-size:15px;
-                                     padding:15px 0; width:200px; border-radius:3px; text-align:center; margin-left:15px;}
+                                     padding:15px 0; width:200px; border-radius:3px; text-align:center;}
         /* 중간영역cont8 작업 끝 */
         
         /* 풋터영역 작업 시작 */
         #footer {display:flex; justify-content:center; text-align:center; background-color:#040c2c; padding:30px 0;}
-        #footer .center {width:20%;}
+        #footer .center {width:30%;}
         #footer .center h1 {margin:30px 0;}
         #footer .center .sns {display:flex; justify-content:center;}
         #footer .center .sns li a {margin:0 6px; width:10px; height:10px; display:flex; align-items:center; justify-content:center; border:1px solid #fff; border-radius:50%; padding:10px;
@@ -235,25 +237,46 @@
                 #header.fixed .center .ham_menu span {background-color:#040c2c;}
 
                 /* cont2 작업 시작 */
-                .cont2 .center .left_textBox {left:135px;}
-                .cont2 .center .right_imgBox {width:75%; position:relative; right:0;}
+                .cont2 .center .left_textBox {left:11.25%;}
+                .cont2 .center .right_imgBox {width:75%; position:relative; right:-50px;}
 
                 /* cont3 작업 시작 */
                 .cont3 .center {width:77.5%;}
                 .cont3 .center .boxs .box {width:24%; height:350px;}
-                .cont4 .cont4_top .center {width:80%;}
-                .cont4 .cont4_top .center .bot_isotope .boxs .box {margin:1.25%;}
-                .cont4 .cont4_top .center .bot_isotope .boxs .small {width:17.5%;}
-                .cont4 .cont4_top .center .bot_isotope .boxs .big {width:37.5%;}
-
-                .cont4 .cont4_bot {padding:100px 0;}
+                
+                /* cont4 작업 시작 */
+                .cont4 .cont4_top .center {width:77.5%;}
 
                 .cont5 .top .swiper {width:57.5%;}
+                .cont5 .bot {width:76.666666%;}
+
+                .cont6 .center {width:76.666666%;}
+                .cont6 .box {width:30.333333%;}
+
+                .cont8 .center {width:73.333333%;}
         }
 
 
         @media screen and (max-width:990px) {
+                .cont2 .center .left_textBox {left:15.151515%;}
+                .cont2 .center .right_imgBox {right:-190px;}
 
+                .cont3 .center {width:93.939393%;}
+                .cont3 .center .boxs .box {width:30%;}
+
+                .cont4 .cont4_top .center {width:69.696969%;}
+
+                .cont5 .bot {width:66.666666%;}
+
+                .cont6 .top_box span {margin-top:30px; margin-bottom:70px;}
+                .cont6 .center {width:69.696969%;}
+                .cont6 .bot_box {display:block;}
+                .cont6 .box {width:100%; margin-bottom:50px;}
+
+                .cont8 .center {width:70%;}
+                .cont8 .center .right_box form .box {width:100%; margin-bottom:30px;}
+
+                #footer .center {width:40%;}
         }
 
 
