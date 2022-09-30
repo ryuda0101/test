@@ -281,6 +281,9 @@
 
 
         @media screen and (max-width:768px) {
+                .cont2 {height:100%; padding-top:85px;}
+                .cont2 .center {display:block;}
+                .cont2 .center .left_textBox {width:95%; left:15px;}
 
         }
 
