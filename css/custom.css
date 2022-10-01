@@ -138,7 +138,7 @@
 
         .cont4 .cont4_bot {display:flex; justify-content:center; background-color:#fafafa; padding:120px 0;}
         .cont4 .cont4_bot .center {width:58%; display:flex; justify-content:space-between; text-align:center;}
-        .cont4 .cont4_bot .center .box {text-align:center; }
+        .cont4 .cont4_bot .center .box {text-align:center;}
         .cont4 .cont4_bot .center .box i {font-size:35px;}
         .cont4 .cont4_bot .center .box h2 {font-size:40px;}
         /* 중간영역cont4 작업 끝 */
@@ -157,7 +157,7 @@
 
         .cont5 .bot {width:57.8%; margin:0 auto; text-align:center; padding:130px 0;}
         .cont5 .bot .top_text span {display:block; content:""; display:block; background-color:#bcbcbc; width:80px; height:2px; margin:40px auto;} */
-        .cont5 .bot .bot_img {display:flex; width:11%;}
+        .cont5 .bot .bot_img {display:flex;}
         .cont5 .bot .bot_img img {width:100%;}
         .cont5 .bot .swiper-slide img {opacity:0.6; transition:all 0.5s;}
         .cont5 .bot .swiper-slide:hover img {opacity:1;}        
@@ -284,10 +284,46 @@
                 .cont2 {height:100%; padding-top:85px;}
                 .cont2 .center {display:block;}
                 .cont2 .center .left_textBox {width:95%; left:15px;}
+                
+                .cont2 .center .right_imgBox {width:94%; right:-20px;} 
 
+                .cont3 .center {width:100%;}
+                .cont3 .center .boxs .box {width:46%;}
+                .cont3 {height:1190px;}
+
+                .cont4 .cont4_top .center {width:100%;}
+
+                .cont4 .cont4_top .center .bot_isotope .boxs .box {width:46%; margin:1.8%;}
+
+                .cont4 .cont4_bot .center {flex-wrap:wrap;}
+                .cont4 .cont4_bot .center .box {margin-bottom:30px;}
+                .cont4 .cont4_bot .center .box2 {margin-left:120px;}
+
+                .cont5 .top .swiper {width:68.75%;}
+
+                .cont5 .bot {width:80%;}
+
+                .cont6 .center {width:96%;}
+
+                .cont8 .center {display:block; width:95.5%;}
+                .cont8 .center .left_box {margin-bottom:60px;}
+
+                .cont8 .center .right_box {width:100%;}
+                .cont8 .center .right_box h2 {margin-bottom:35px;}
+
+                #footer .center {width:50%;}
         }
 
 
         @media screen and (max-width:580px) {
+                .cont1 .black_bg .title_text .job {font-size:25px;}
 
+                .cont4 .cont4_bot .center {width:77.5%;}
+                .cont4 .cont4_bot .center .box2 {margin-left:125px;}
+
+                .cont5 .top .swiper {width:93%;}
+
+                .cont5 .bot {width:91%;}
+
+                #footer .center {width:65.5%;}
         }
