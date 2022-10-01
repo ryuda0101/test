@@ -16,8 +16,19 @@
         #header.fixed .center .login {background-color:#040c2c; color:#fff;}
         #header.fixed .center .login::before {background-color:#393939;}
 
+        #header .sub_menu {position:fixed; background:#fff; width:83%; height:0; transition:all 0.5s; overflow:hidden; top:98px;}
+        #header .sub_menu.show {height:450px;}
+
+        #header .sub_menu .sub_gnb {margin-left:45px; width:100%; padding: 50px 0;}
+        #header .sub_menu .sub_gnb li {margin:0 15px; line-height:50px;}
+        #header .sub_menu .sub_gnb li a {position:relative; font-weight:bold; color:#000;}
+        #header .sub_menu .sub_gnb li a::after {content:""; width:0; height:2px; background-color:#4d5369;
+                                                position:absolute; left:0; bottom:-10px; transition:all 0.3s; }
+        #header .sub_menu .sub_gnb li a:hover::after {width:100%}
+        #header .sub_menu .sub_gnb li.on a::after {width:100%;}
+        
         #header .center {width:75%; display:flex; justify-content:space-between;}
-        #header .center .ham_menu {display:none;}
+        #header .center .ham_menu {display:none; cursor:pointer;}
         #header .center .ham_menu span {display:block; width:30px; height:2px; background-color:#fff; margin:5px 0;}
         #header .center ul, #header .center{display:flex; align-items:center;}
         #header .center ul li {margin:0 15px; line-height:100px;}
