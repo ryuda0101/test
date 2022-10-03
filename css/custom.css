@@ -29,7 +29,12 @@
         
         #header .center {width:75%; display:flex; justify-content:space-between;}
         #header .center .ham_menu {display:none; cursor:pointer;}
-        #header .center .ham_menu span {display:block; width:30px; height:2px; background-color:#fff; margin:5px 0;}
+        #header .center .ham_menu span {display:block; width:30px; height:2px; background-color:#fff; margin:5px 0; transition:all 0.5s;}
+        
+        #header .center .ham_menu.on .first {transform:rotate(45deg) translateX(30%);}
+        #header .center .ham_menu.on .last {transform:rotate(-45deg) translateX(30%);}
+        #header .center .ham_menu.on .mid {opacity:0; left:50%;}
+
         #header .center ul, #header .center{display:flex; align-items:center;}
         #header .center ul li {margin:0 15px; line-height:100px;}
         
@@ -148,8 +153,9 @@
 
 
         .cont4 .cont4_bot {display:flex; justify-content:center; background-color:#fafafa; padding:120px 0;}
-        .cont4 .cont4_bot .center {width:58%; display:flex; justify-content:space-between; text-align:center;}
-        .cont4 .cont4_bot .center .box {text-align:center;}
+        .cont4 .cont4_bot .center {width:58%; text-align:center; display:flex; justify-content:center;}
+        .cont4 .cont4_bot .center > div {display:flex; justify-content:center;}
+        .cont4 .cont4_bot .center .box {text-align:center; margin:0 80px;}
         .cont4 .cont4_bot .center .box i {font-size:35px;}
         .cont4 .cont4_bot .center .box h2 {font-size:40px;}
         /* 중간영역cont4 작업 끝 */
@@ -276,6 +282,7 @@
                 .cont3 .center .boxs .box {width:30%;}
 
                 .cont4 .cont4_top .center {width:69.696969%;}
+                .cont4 .cont4_top .center .bot_isotope .box_menu a {padding:20px;}
 
                 .cont5 .bot {width:66.666666%;}
 
@@ -305,10 +312,13 @@
                 .cont4 .cont4_top .center {width:100%;}
 
                 .cont4 .cont4_top .center .bot_isotope .boxs .box {width:46%; margin:1.8%;}
+                .cont4 .cont4_top .center .bot_isotope .box_menu a {padding:15px;}
 
-                .cont4 .cont4_bot .center {flex-wrap:wrap;}
+                .cont4 .cont4_bot .center {justify-content:space-between;}
                 .cont4 .cont4_bot .center .box {margin-bottom:30px;}
-                .cont4 .cont4_bot .center .box2 {margin-left:120px;}
+                .cont4 .cont4_bot .center > div {display:block;}
+
+                .cont4 .cont4_bot .center .box {margin:25px 0;}
 
                 .cont5 .top .swiper {width:68.75%;}
 
@@ -329,12 +339,17 @@
         @media screen and (max-width:580px) {
                 .cont1 .black_bg .title_text .job {font-size:25px;}
 
+                .cont4 .cont4_top .center .bot_isotope .box_menu li {margin:5px;}
+                .cont4 .cont4_top .center .bot_isotope .box_menu a {padding:10px;}
+                
                 .cont4 .cont4_bot .center {width:77.5%;}
-                .cont4 .cont4_bot .center .box2 {margin-left:125px;}
 
+                
                 .cont5 .top .swiper {width:93%;}
 
                 .cont5 .bot {width:91%;}
 
                 #footer .center {width:65.5%;}
+
+
         }

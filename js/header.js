@@ -16,6 +16,7 @@ const ham_btn = document.querySelector("#header .center .ham_menu");
 
 ham_btn.addEventListener("click",function(el,index){
     sub_menu.classList.toggle("show");
+    ham_btn.classList.toggle("on");
 });
 
 
